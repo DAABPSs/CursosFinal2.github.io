@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #eee;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #90caf9;
+  text-shadow: 0 0 6px #2196f3;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #bbdefb;
+  border-bottom: 2px solid #42a5f5;
+  padding-bottom: 0.3rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+form input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  width: 200px;
+  background-color: #1e1e1e;
+  color: #eee;
+  box-shadow: inset 0 0 4px #2196f3;
+  transition: box-shadow 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #42a5f5;
+}
+
+form input[type="date"] {
+  width: 140px;
+}
+
+form button {
+  background: linear-gradient(45deg, #2196f3, #42a5f5);
+  border: none;
+  color: #121212;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #42a5f5;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(45deg, #42a5f5, #2196f3);
+}
+
+#cursos-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.curso {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  box-shadow: 0 0 12px #2196f3aa;
+  transition: transform 0.3s ease;
+}
+
+.curso:hover {
+  transform: scale(1.01);
+}
+
+.curso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.curso-nombre {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #90caf9;
+  text-shadow: 0 0 4px #2196f3;
+}
+
+.curso-nombre a {
+  color: #64b5f6;
+  text-decoration: none;
+}
+
+.curso-nombre a:hover {
+  color: #bbdefb;
+  text-decoration: underline;
+}
+
+.curso-categoria {
+  font-style: italic;
+  color: #80deea;
+  font-size: 0.95rem;
+}
+
+.curso-fechas {
+  font-size: 0.9rem;
+  color: #b0bec5;
+  margin-bottom: 0.6rem;
+}
+
+.curso-editar-fecha {
+  margin-bottom: 0.5rem;
+}
+
+.tareas {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.tarea input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 1px #42a5f5);
+}
+
+.tarea label {
+  flex-grow: 1;
+}
+
+.agregar-tarea {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.agregar-tarea input[type="text"] {
+  flex-grow: 1;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: #eee;
+  box-shadow: inset 0 0 4px #2196f3aa;
+}
+
+.agregar-tarea button {
+  padding: 0.4rem 1rem;
+  background: linear-gradient(45deg, #42a5f5, #2196f3);
+  border: none;
+  color: #121212;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 6px #42a5f5;
+}
+
+.agregar-tarea button:hover {
+  background: linear-gradient(45deg, #2196f3, #42a5f5);
+}
+
+.progreso {
+  margin-top: 0.8rem;
+  font-weight: 700;
+  color: #64b5f6;
+}
+
+#import-export {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.import-export-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+#importar-input {
+  color: #90caf9;
+  background-color: #1e1e1e;
+  border: 1px solid #42a5f5;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#exportar-btn {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(45deg, #2196f3, #42a5f5);
+  border: none;
+  color: #121212;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #42a5f5;
+  transition: background 0.3s ease;
+}
+
+#exportar-btn:hover {
+  background: linear-gradient(45deg, #42a5f5, #2196f3);
+}

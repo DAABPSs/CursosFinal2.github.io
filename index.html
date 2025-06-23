@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mis Cursos Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mis Cursos Online</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <h2>Agregar nuevo curso</h2>
+      <form id="curso-form">
+        <input type="text" id="nombre" placeholder="Nombre del curso" required />
+        <input type="text" id="categoria" placeholder="Categoría" />
+        <input type="url" id="url" placeholder="Link al curso (opcional)" />
+        <input type="date" id="fecha-inicio" />
+        <input type="date" id="fecha-fin" />
+        <button type="submit">Agregar curso</button>
+      </form>
+    </section>
+
+    <section id="lista-cursos">
+      <h2>Lista de cursos</h2>
+      <div id="cursos-container"></div>
+    </section>
+
+    <section id="import-export">
+  <h2>Importar / Exportar cursos</h2>
+  <div class="import-export-controls">
+    <button id="exportar-btn">📤 Exportar cursos</button>
+    <input type="file" id="importar-input" accept=".json" />
+  </div>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
