@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mis Cursos Online</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mis Cursos Online</title>
+<link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Mis Cursos Online</h1>
-  </header>
 
-  <main>
+<body>
+<header>
+    <h1>Mis Cursos Online</h1>
+</header>
+
+<main>
+
+    <!-- 🔎 BUSCADOR -->
+    <section id="buscador-section">
+        <input type="text" id="buscador" placeholder="Buscar curso...">
+    </section>
+
     <section id="form-section">
-      <h2>Agregar nuevo curso</h2>
-      <form id="curso-form">
-        <input type="text" id="nombre" placeholder="Nombre del curso" required />
-        <input type="text" id="categoria" placeholder="Categoría" />
-        <input type="url" id="url" placeholder="Link al curso (opcional)" />
-        <input type="date" id="fecha-inicio" />
-        <input type="date" id="fecha-fin" />
-        <button type="submit">Agregar curso</button>
-      </form>
+        <h2>Agregar nuevo curso</h2>
+        <form id="curso-form">
+            <input type="text" id="nombre" placeholder="Nombre del curso" required />
+            <input type="text" id="categoria" placeholder="Categoría" />
+            <input type="url" id="url" placeholder="Link al curso (opcional)" />
+            <input type="date" id="fecha-inicio" />
+            <input type="date" id="fecha-fin" />
+            <button type="submit">Agregar curso</button>
+        </form>
     </section>
 
     <section id="lista-cursos">
-      <h2>Lista de cursos</h2>
-      <div id="cursos-container"></div>
+        <h2>Lista de cursos</h2>
+        <p id="contador-cursos"></p>
+        <div id="cursos-container"></div>
+    </section>
+
+    <!-- 🟦 CURSOS COMPLETADOS -->
+    <section id="cursos-completados-section">
+        <h2>Cursos completados</h2>
+        <div id="cursos-completados"></div>
     </section>
 
     <section id="import-export">
-  <h2>Importar / Exportar cursos</h2>
-  <div class="import-export-controls">
-    <button id="exportar-btn">📤 Exportar cursos</button>
-    <input type="file" id="importar-input" accept=".json" />
-  </div>
-</section>
+        <h2>Importar / Exportar cursos</h2>
+        <div class="import-export-controls">
+            <button id="exportar-btn">📤 Exportar cursos</button>
+            <input type="file" id="importar-input" accept=".json" />
+        </div>
+    </section>
 
-  </main>
+</main>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
